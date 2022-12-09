@@ -1,5 +1,18 @@
+import realMadridLogo from "./assets/realMadridLogo.png";
+import Header from "./components/Header";
+import Body from "./components/Body/Body";
 function App() {
-    return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+    return (
+        <>
+            <Header />
+            <div className="divider">
+                <div className="rounded w-48">
+                    <img src={realMadridLogo} />
+                </div>
+            </div>
+            <Body />
+        </>
+    );
 }
 
 export default App;
