@@ -7,7 +7,7 @@ function App() {
             <Header />
             <div className="divider">
                 <div className="rounded w-48">
-                    <img src={realMadridLogo} />
+                    <img src={realMadridLogo} alt="Real Madrid logo" />
                 </div>
             </div>
             <Body />
