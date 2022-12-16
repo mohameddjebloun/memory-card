@@ -2,7 +2,7 @@ import background from "../assets/hero-bg.jpg";
 const Header = () => {
     return (
         <div
-            className="hero min-h-screen"
+            className="hero min-h-screen w-screen"
             style={{
                 backgroundImage: `url(${background})`,
             }}
