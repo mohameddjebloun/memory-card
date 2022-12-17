@@ -1,4 +1,5 @@
 //Imports
+import { useState } from "react";
 import IMAGES from "../../assets/players/playerImages";
 import PlayerCard from "./PlayerCard";
 //Set the initial players list array state
@@ -40,5 +41,13 @@ const renderArray = (array) => {
     ));
 };
 //Component function
-const PlayersList = () => {};
+const PlayersList = () => {
+    //Initialize the states
+    const [playersList, setPlayersList] = useState(initialPlayersList);
+    return (
+        <div className="pt-8 flex flex-wrap gap-1 justify-center content-center">
+            {renderArray(playersList)}
+        </div>
+    );
+};
 export default PlayersList;
