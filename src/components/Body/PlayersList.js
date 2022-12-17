@@ -1,5 +1,7 @@
+//Imports
 import IMAGES from "../../assets/players/playerImages";
-
+import PlayerCard from "./PlayerCard";
+//Set the initial players list array state
 const initialPlayersList = [
     { name: "Alaba", img: IMAGES.alabaImg, isClicked: false },
     { name: "Ancelotti", img: IMAGES.ancelottiImg, isClicked: false },
@@ -26,5 +28,12 @@ const initialPlayersList = [
     { name: "Vazquez", img: IMAGES.vazquezImg, isClicked: false },
     { name: "Vinicius", img: IMAGES.viniciusImg, isClicked: false },
 ];
+//Create the renderArray function to render the players list array
+const renderArray = (array) => {
+    return array.map((player) => (
+        <PlayerCard key={player.key} player={player} />
+    ));
+};
+//Component function
 const PlayersList = () => {};
 export default PlayersList;
