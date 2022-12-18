@@ -1,4 +1,4 @@
-//Create a shuffleArray function
+//Create a shuffleArray function using the Fisher-Yates Algorithm
 const shuffleArray = (array) => {
     array.reverse().forEach((item, index) => {
         const j = Math.floor(Math.random() * (index + 1));
@@ -9,8 +9,29 @@ const shuffleArray = (array) => {
 };
 //Component function
 const PlayerCard = (props) => {
+    //Handle the PlayerCard click event
+    const playerCardClickHandler = () => {
+        //Update isClicked property
+        props.changePlayersList((prevState) =>
+            prevState.map((obj) => {
+                if (obj.key === props.player.key) {
+                    if (props.player.isClicked) {
+                        props.changePlayersList(props.initialState);
+                        return obj;
+                    }
+                    return { ...obj, isClicked: true };
+                }
+                return obj;
+            })
+        );
+        //Shuffle the array
+        props.changePlayersList((prevState) => shuffleArray(prevState));
+    };
     return (
-        <div className="card w-96 bg-primary-focus shadow-xl">
+        <div
+            onClick={playerCardClickHandler}
+            className="card w-96 bg-primary-focus shadow-xl"
+        >
             <figure className="px-10 pt-10">
                 <img
                     src={props.player.img}
