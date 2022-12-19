@@ -13,6 +13,8 @@ const Body = () => {
             <PlayersList
                 changeCurrentScore={setCurrentScore}
                 changeBestScore={setBestScore}
+                currentScore={currentScore}
+                bestScore={bestScore}
             />
         </>
     );

@@ -39,7 +39,9 @@ const renderArray = (
     array,
     changePlayersList,
     changeCurrentScore,
-    changeBestScore
+    changeBestScore,
+    currentScore,
+    bestScore
 ) => {
     return array.map((player) => (
         <PlayerCard
@@ -49,6 +51,8 @@ const renderArray = (
             changeCurrentScore={changeCurrentScore}
             changeBestScore={changeBestScore}
             initialState={initialPlayersList}
+            currentScore={currentScore}
+            bestScore={bestScore}
         />
     ));
 };
@@ -62,7 +66,9 @@ const PlayersList = (props) => {
                 playersList,
                 setPlayersList,
                 props.changeCurrentScore,
-                props.changeBestScore
+                props.changeBestScore,
+                props.currentScore,
+                props.bestScore
             )}
         </div>
     );
