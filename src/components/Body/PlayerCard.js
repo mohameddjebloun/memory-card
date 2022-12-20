@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import ScoreContext from "../../store/score-context";
+
 //Create a shuffleArray function using the Fisher-Yates Algorithm
 const shuffleArray = (array) => {
     array.reverse().forEach((item, index) => {
@@ -9,23 +12,25 @@ const shuffleArray = (array) => {
 };
 //Component function
 const PlayerCard = (props) => {
+    const ctx = useContext(ScoreContext);
     //Handle the PlayerCard click event
     const playerCardClickHandler = () => {
-        //Update isClicked property
-        props.changePlayersList((prevState) =>
-            prevState.map((obj) => {
-                if (obj.key === props.player.key) {
-                    if (props.player.isClicked) {
-                        props.changePlayersList(props.initialState);
-                        return obj;
-                    }
-                    return { ...obj, isClicked: true };
-                }
-                return obj;
-            })
+        //Reset round
+        if (props.clickedPlayers.includes(props.player.name)) {
+            props.updateClickedPlayers([]);
+        }
+        //Update clickedPlayers array
+        else {
+            props.updateClickedPlayers((prevArr) => [
+                ...prevArr,
+                props.player.name,
+            ]);
+        }
+        ctx.updateCurrentScore(
+            props.clickedPlayers.includes(props.player.name)
         );
         //Shuffle the array
-        props.changePlayersList((prevState) => shuffleArray(prevState));
+        props.updatePlayersList((prevState) => shuffleArray(prevState));
     };
     return (
         <div

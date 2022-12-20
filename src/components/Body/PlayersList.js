@@ -35,23 +35,35 @@ const initialPlayersList = [
     { key: 24, name: "Vinicius", img: IMAGES.viniciusImg, isClicked: false },
 ];
 //Create the renderArray function to render the players list array
-const renderArray = (array, changePlayersList) => {
+const renderArray = (
+    array,
+    updatePlayersList,
+    clickedPlayers,
+    updateClickedPlayers
+) => {
     return array.map((player) => (
         <PlayerCard
             key={player.key}
             player={player}
-            changePlayersList={changePlayersList}
-            initialState={initialPlayersList}
+            updatePlayersList={updatePlayersList}
+            clickedPlayers={clickedPlayers}
+            updateClickedPlayers={updateClickedPlayers}
         />
     ));
 };
 //Component function
-const PlayersList = (props) => {
+const PlayersList = () => {
     //Initialize the states
     const [playersList, setPlayersList] = useState(initialPlayersList);
+    const [clickedPlayers, setClickedPlayers] = useState([]);
     return (
         <div className="pt-8 flex flex-wrap gap-1 justify-center content-center">
-            {renderArray(playersList, setPlayersList)}
+            {renderArray(
+                playersList,
+                setPlayersList,
+                clickedPlayers,
+                setClickedPlayers
+            )}
         </div>
     );
 };
