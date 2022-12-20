@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.338f2640.css",
+    "main.js": "/memory-card/static/js/main.5fe94968.js",
+    "static/media/hero-bg.jpg": "/memory-card/static/media/hero-bg.e117870c9ac8b6381ed9.jpg",
+    "static/media/realMadridLogo.png": "/memory-card/static/media/realMadridLogo.6b46e1b9549f9b15a3be.png",
+    "static/media/courtois.jpg": "/memory-card/static/media/courtois.2aab907aa125d1a18ef6.jpg",
+    "static/media/lunin.jpg": "/memory-card/static/media/lunin.48436e80c65b35754466.jpg",
+    "static/media/ancelotti.jpg": "/memory-card/static/media/ancelotti.34fc4c804d6cb6afcf43.jpg",
+    "static/media/mariano.jpg": "/memory-card/static/media/mariano.3bf5222292dd2abaf07e.jpg",
+    "static/media/modric.jpg": "/memory-card/static/media/modric.a0a63f5c83eb981b2f99.jpg",
+    "static/media/tchouameni.jpg": "/memory-card/static/media/tchouameni.5cbd75ff1b02213d79ef.jpg",
+    "static/media/alaba.jpg": "/memory-card/static/media/alaba.4d5ecd8125b66ae2676c.jpg",
+    "static/media/vallejo.jpg": "/memory-card/static/media/vallejo.9f58dcd58ce33ceac0b4.jpg",
+    "static/media/benzema.jpg": "/memory-card/static/media/benzema.cd4f31a7b6a68791153c.jpg",
+    "static/media/vinicius.jpg": "/memory-card/static/media/vinicius.119eedd7c7e6e6395730.jpg",
+    "static/media/nacho.jpg": "/memory-card/static/media/nacho.2caa2c86f0a910b01262.jpg",
+    "static/media/valverde.jpg": "/memory-card/static/media/valverde.b58fd4bfbd0049719370.jpg",
+    "static/media/kroos.jpg": "/memory-card/static/media/kroos.e63d453c50d2ffaa23e1.jpg",
+    "static/media/hazard.jpg": "/memory-card/static/media/hazard.6b52ac058d1549801d0d.jpg",
+    "static/media/vazquez.jpg": "/memory-card/static/media/vazquez.d77c4acf3633ce3afb7b.jpg",
+    "static/media/asensio.jpg": "/memory-card/static/media/asensio.25626524e7f047429057.jpg",
+    "static/media/odriozola.jpg": "/memory-card/static/media/odriozola.fb0a5c1710881f1aba5c.jpg",
+    "static/media/militao.jpg": "/memory-card/static/media/militao.ea3d9082fb86213c2904.jpg",
+    "static/media/rodrygo.jpg": "/memory-card/static/media/rodrygo.729577db5d22ede61376.jpg",
+    "static/media/rudiger.jpg": "/memory-card/static/media/rudiger.48cfaef86a197c0aec90.jpg",
+    "static/media/ceballos.jpg": "/memory-card/static/media/ceballos.5f4c8560f468d38efd5c.jpg",
+    "static/media/carvajal.jpg": "/memory-card/static/media/carvajal.d4999f91be0d909fb0b7.jpg",
+    "static/media/camavinga.jpg": "/memory-card/static/media/camavinga.ed685e2779b2498a4912.jpg",
+    "static/media/mendy.jpg": "/memory-card/static/media/mendy.8917af4c39cd3de303a7.jpg",
+    "index.html": "/memory-card/index.html",
+    "main.338f2640.css.map": "/memory-card/static/css/main.338f2640.css.map",
+    "main.5fe94968.js.map": "/memory-card/static/js/main.5fe94968.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.338f2640.css",
+    "static/js/main.5fe94968.js"
+  ]
+}
