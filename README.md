@@ -1,7 +1,7 @@
 # Memory Card
 
 This is a react app where you need to memorize the cards you clicked to get points
-[Live Demo](https://mohameddjebloun.github.io/cv-application/) :point_left:
+[Live Demo](https://mohameddjebloun.github.io/memory-card) :point_left:
 If you want to run it locally and/or play around with the code then you should:
 
 ## Getting Started
