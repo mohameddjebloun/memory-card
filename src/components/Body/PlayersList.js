@@ -35,24 +35,13 @@ const initialPlayersList = [
     { key: 24, name: "Vinicius", img: IMAGES.viniciusImg, isClicked: false },
 ];
 //Create the renderArray function to render the players list array
-const renderArray = (
-    array,
-    changePlayersList,
-    changeCurrentScore,
-    changeBestScore,
-    currentScore,
-    bestScore
-) => {
+const renderArray = (array, changePlayersList) => {
     return array.map((player) => (
         <PlayerCard
             key={player.key}
             player={player}
             changePlayersList={changePlayersList}
-            changeCurrentScore={changeCurrentScore}
-            changeBestScore={changeBestScore}
             initialState={initialPlayersList}
-            currentScore={currentScore}
-            bestScore={bestScore}
         />
     ));
 };
@@ -62,14 +51,7 @@ const PlayersList = (props) => {
     const [playersList, setPlayersList] = useState(initialPlayersList);
     return (
         <div className="pt-8 flex flex-wrap gap-1 justify-center content-center">
-            {renderArray(
-                playersList,
-                setPlayersList,
-                props.changeCurrentScore,
-                props.changeBestScore,
-                props.currentScore,
-                props.bestScore
-            )}
+            {renderArray(playersList, setPlayersList)}
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import realMadridLogo from "./assets/realMadridLogo.png";
 import Header from "./components/Header";
 import Body from "./components/Body/Body";
+import { ScoreContextProvider } from "./store/score-context";
 function App() {
     return (
         <>
@@ -10,7 +11,9 @@ function App() {
                     <img src={realMadridLogo} alt="Real Madrid logo" />
                 </div>
             </div>
-            <Body />
+            <ScoreContextProvider>
+                <Body />
+            </ScoreContextProvider>
         </>
     );
 }

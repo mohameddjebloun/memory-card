@@ -1,21 +1,16 @@
 //Imports
-import { useState } from "react";
+import { useContext } from "react";
+import ScoreContext from "../../store/score-context";
 import PlayersList from "./PlayersList";
 import Score from "./Score";
 //Component function
 const Body = () => {
     //Initialize the states
-    const [currentScore, setCurrentScore] = useState(0);
-    const [bestScore, setBestScore] = useState(0);
+    const ctx = useContext(ScoreContext);
     return (
         <>
-            <Score currentScore={currentScore} bestScore={bestScore} />
-            <PlayersList
-                changeCurrentScore={setCurrentScore}
-                changeBestScore={setBestScore}
-                currentScore={currentScore}
-                bestScore={bestScore}
-            />
+            <Score currentScore={ctx.currentScore} bestScore={ctx.bestScore} />
+            <PlayersList />
         </>
     );
 };
