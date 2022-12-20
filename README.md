@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# Memory Card
+
+This is a react app where you need to memorize the cards you clicked to get points
+[Live Demo](https://mohameddjebloun.github.io/cv-application/) :point_left:
+If you want to run it locally and/or play around with the code then you should:
+
+## Getting Started
+
+```
+git clone https://github.com/mohameddjebloun/cv-application.git
+cd cv-application
+npm install
+npm start
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
